@@ -40,3 +40,10 @@ a {
     color-scheme: dark;
   }
 }
+
+#contact{
+  background: url(/images/map.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
