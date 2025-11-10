@@ -3,6 +3,7 @@ import HeroSection from "../components/herosection";
 import WorkSection from "../components/worksection";
 import ServiceSection from "../components/servicesection";
 import ContactSection from "../components/contactsection";
+import Footer from "../components/footer";
 import { Row, Col, Container, Button } from "react-bootstrap";
 import Image from "next/image";
 
@@ -40,6 +41,9 @@ export default function Home() {
         <ServiceSection></ServiceSection>
         <section id="contact">
           <ContactSection></ContactSection>
+        </section>
+        <section>
+          <Footer></Footer>
         </section>
       </main>
     </>
