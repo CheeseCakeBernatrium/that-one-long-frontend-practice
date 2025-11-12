@@ -37,9 +37,32 @@ export default function Footer() {
                             <li className='mb-2'><a href="#">License</a></li>
                         </ul>
                     </Col>
+                    {/* Search + Social */}
+                    <Col md={3}>
+                        <h3>Search Here</h3>
+                        <Form className='mb3'>
+                            <InputGroup>
+                                <Form.Control type="text" placeholder='Search Here' />
+                                <Button variant="Info">Search</Button>
+                            </InputGroup>
+                        </Form>
+                        <h3>Follow Us</h3>
+                        <ul className='list-unstyled d-flex gap-3'>
+                            <li><a href="#"><i className='bi bi-facebook fs-4'></i></a></li>
+                            <li><a href="#"><i className='bi bi-instagram fs-4'></i></a></li>
+                            <li><a href="#"><i className='bi bi-twitter fs-4'></i></a></li>
+                            <li><a href="#"><i className='bi bi-youtube fs-4'></i></a></li>
+                            <li><a href="#"><i className='bi bi-pinterest fs-4'></i></a></li>
+                        </ul>
+                    </Col>
+                    {/* Copyright */}
+                    <Row className='mt-3'>
+                        <Col md={12} className='text-center'>
+                            <hr/>
+                            <p className='mb-0'>All rights reserved by @ Martin Cahyadi</p>
+                        </Col>
+                    </Row>
                 </Row>
-                {/* Search + Social */}
-                
             </Container>
         </footer>
     );

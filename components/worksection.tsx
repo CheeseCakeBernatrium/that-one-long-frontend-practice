@@ -7,46 +7,46 @@ function WorkSection() {
         <Container>
             <Row className="mb-3">
                 <Col md={12} className="text-center">
-                    <h2>Our Work</h2>
-                    <p>Eating Lunch, Watson</p>
+                    <h2 style={{ color: "white", textShadow: "2px 3px 0px #54428e"}}>Our Work</h2>
+                    <p style={{ color: "white", textShadow: "2px 3px 0px #54428e"}}>It's Mostly Just Drawings</p>
                 </Col>
             </Row>
             <Row>
                 <Col md={4} className="mb-3">
                     <Card>
-                        <Card.Img variant="top" src="/images/work_01.jpg" height={200} width={200}></Card.Img>
+                        <Card.Img variant="top" src="/images/work_01.jpg" height={300} width={500}></Card.Img>
                         <Card.Body>
                             <Card.Title>
-                                Such Is The Card Title, Watson
+                                Example ArtWork #1
                             </Card.Title>
                             <Card.Text>
-                                Such Is The Card Text, Watson
+                                Vergil from DMCV
                             </Card.Text>
                         </Card.Body>
                     </Card>
                 </Col>
                 <Col md={4} className="mb-3">
                     <Card>
-                        <Card.Img variant="top" src="/images/work_02.jpg" height={200} width={200}></Card.Img>
+                        <Card.Img variant="top" src="/images/work_02.jpg" height={500} width={200}></Card.Img>
                         <Card.Body>
                             <Card.Title>
-                                Such Is The Card Title Second, Watson
+                                Example ArtWork #2
                             </Card.Title>
                             <Card.Text>
-                                Such Is The Card Text Second, Watson
+                                Dante from DMC3
                             </Card.Text>
                         </Card.Body>
                     </Card>
                 </Col>
                 <Col md={4} className="mb-3">
                     <Card>
-                        <Card.Img variant="top" src="/images/work_03.jpg" height={200} width={200}></Card.Img>
+                        <Card.Img variant="top" src="/images/work_03.jpg" height={300} width={500}></Card.Img>
                         <Card.Body>
                             <Card.Title>
-                                Such Is The Card Title Third, Watson
+                                Example ArtWork #3
                             </Card.Title>
                             <Card.Text>
-                                Such Is The Card Text Third, Watson
+                                Faust from GGST
                             </Card.Text>
                         </Card.Body>
                     </Card>

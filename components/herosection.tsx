@@ -11,24 +11,24 @@ interface Slide {
 const HeroSection = () => {
     const slides: Slide[] = [
         {
-            title: "Why you tryna not to laugh",
-            subtitle: "Hey bro Im watching your stream, why you tryna not to laugh",
+            title: "Hey! It's Martin",
+            subtitle: "I'm Doing Computer Science",
             imageUrl: "images/banner_01.jpg",
         },
         {
-            title: "Image 2 idk",
-            subtitle: "Description goes here",
+            title: "Hey! It's Martin",
+            subtitle: "I Like Doing Art",
             imageUrl: "images/banner_02.jpg",
         },
         {
-            title: "Image 3 idk",
-            subtitle: "Description goes here",
+            title: "Hey! It's Martin",
+            subtitle: "I Like Playing Video Games",
             imageUrl: "images/banner_03.jpg",
         }
     ]
 
     return (
-        <Carousel fade interval={4000} data-bs-theme="dark">
+        <Carousel fade interval={4000} data-bs-theme="dark" style={{boxShadow: "0px 13px 0px #90c290"}}>
             {slides.map((slide, index) => (
                 <Carousel.Item key={index}>
                     <div
@@ -36,13 +36,13 @@ const HeroSection = () => {
                             backgroundImage: `url(${slide.imageUrl})`,
                             backgroundSize: "cover",
                             backgroundPosition: "center",
-                            height: "60vh",
+                            height: "90vh",
                         }}
                     >
                     </div>
-                    <Carousel.Caption>
-                        <h1 className="display-4 fw-bold">{slide.title}</h1>
-                        <p className="lead">{slide.subtitle}</p>
+                    <Carousel.Caption style={{ textShadow: "2px 3px 0px #54428e"}}>
+                        <h1 className="display-4 fw-bold text-white">{slide.title}</h1>
+                        <p className="lead text-white">{slide.subtitle}</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             )

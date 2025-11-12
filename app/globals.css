@@ -41,9 +41,25 @@ a {
   }
 }
 
-#contact{
-  background: url(/images/map.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+#contact {
+  background-color: #afe3c0;
+}
+
+#footer ul li a {
+  color: #3343a0;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.navbar-component{
+  height: 10%;
+  padding: 0 200px;
+  font-size: large;
+  color: white;
+  background-color: #afe3c0;
+  box-shadow: 0px 15px 0px #a4d6ba;
 }

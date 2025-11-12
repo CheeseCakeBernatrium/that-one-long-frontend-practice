@@ -10,21 +10,24 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavbarComponent() {
     return (
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar expand="lg" className="fixed-top navbar-component px-5">
             <Container fluid>
-                <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+                <Navbar.Brand href="#action1">Martin Cahyadi</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll"></Navbar.Toggle>
                 <Navbar.Collapse id="navbarScroll">
                     <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
-                        <Nav.Link href="#action1">Home</Nav.Link>
-                        <Nav.Link href="#action2">Link</Nav.Link>
-                        <NavDropdown title="link" id="navbarScrollingDropdown">
-                            <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action4">Action</NavDropdown.Item>
+                        <NavDropdown title="Links" id="navbarScrollingDropdown">
+                            <NavDropdown.Item href="#action1">Home</NavDropdown.Item>
                             <NavDropdown.Divider></NavDropdown.Divider>
-                            <NavDropdown.Item href="#action5">Something In The Way :P</NavDropdown.Item>
+                            <NavDropdown.Item href="#action2">About Us</NavDropdown.Item>
+                            <NavDropdown.Divider></NavDropdown.Divider>
+                            <NavDropdown.Item href="#action3">Cards</NavDropdown.Item>
+                            <NavDropdown.Divider></NavDropdown.Divider>
+                            <NavDropdown.Item href="#action4">Services</NavDropdown.Item>
+                            <NavDropdown.Divider></NavDropdown.Divider>
+                            <NavDropdown.Item href="#contact">Contacts</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#" disabled>Link</Nav.Link>
+                        <Nav.Link href="#" disabled></Nav.Link>
                         <Form className="d-flex">
                             <Form.Control
                                 type="search"
@@ -33,7 +36,7 @@ function NavbarComponent() {
                                 aria-label="Search"
                             >
                             </Form.Control>
-                            <Button variant="outline-success">Search</Button>
+                            <Button variant="outline-dark">Search</Button>
                         </Form>
                     </Nav>
                 </Navbar.Collapse>
